@@ -104,7 +104,7 @@ button {
         font-size: 14px; /* Mengecilkan teks di HP */
         bottom: 5px; /* Mengurangi jarak bawah agar tidak terpotong */
         padding: 5px; /* Kurangi padding biar tidak terlalu besar */
-        width: 10%; /* Batasi lebar agar tidak melebar */
+        width: 80%; /* Batasi lebar agar tidak melebar */
     }
 }
 
