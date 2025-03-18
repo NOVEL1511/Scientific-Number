@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Number Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <div class="dropdown">
+            <button>File</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="saveFile()">Save</a>
+                <a href="#" onclick="saveAsFile()">Save As</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button>Edit</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="copyText()">Copy</a>
+                <a href="#" onclick="pasteText()">Paste</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button onclick="checkScientificNumber()">Run</button>
+        </div>
+        <div class="dropdown">
+            <button>About Us</button>
+            <div class="dropdown-content">
+                <a>Novel Natanael Sengkey</a>
+                <a>231011060040</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <input type="text" id="inputNumber" placeholder="Enter a number">
+        <button onclick="checkScientificNumber()">Check</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
