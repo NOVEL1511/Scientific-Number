@@ -99,3 +99,14 @@ button {
     transition: opacity 0.5s ease-in-out;
 }
 
+@media (max-width: 768px) { /* Hanya berlaku untuk layar kecil seperti HP */
+    .quote-container {
+        width: 90%;
+        max-width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+    }
+}
