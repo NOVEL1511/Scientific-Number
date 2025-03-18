@@ -83,7 +83,10 @@ button {
 .quote-container {
     position: fixed;
     bottom: 20px;
-    width: 100%;
+    left: 50%; /* Pusatkan elemen */
+    transform: translateX(-50%); /* Supaya tetap di tengah */
+    width: 90%; /* Pastikan tidak melebihi layar */
+    max-width: 600px; /* Batasi lebar maksimal */
     text-align: center;
     font-size: 18px;
     font-style: italic;
@@ -92,9 +95,13 @@ button {
     padding: 10px;
     border-radius: 10px;
     transition: opacity 0.5s ease-in-out;
+    word-wrap: break-word; /* Supaya teks tidak keluar */
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 #quote {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
+
