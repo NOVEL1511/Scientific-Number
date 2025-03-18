@@ -98,3 +98,27 @@ button {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
+
+@media screen and (max-width: 768px) {
+    .quote-container {
+        font-size: 14px; /* Mengecilkan teks di HP */
+        bottom: 10px; /* Mengurangi jarak bawah */
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Susun dropdown ke bawah */
+        align-items: center;
+    }
+
+    .dropdown-content {
+        position: static; /* Pastikan menu dropdown terlihat */
+        text-align: center;
+    }
+}
+
+.container, input, button {
+    max-width: 90%; /* Mencegah elemen melebar di HP */
+}
