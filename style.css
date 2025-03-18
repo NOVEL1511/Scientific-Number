@@ -3,10 +3,10 @@ body {
     text-align: center;
     margin: 50px;
     background-image: url('unsratbagus.jpg'); /* Ganti dengan gambar yang diunggah */
-    background-size: cover; /* Memastikan gambar memenuhi layar */
-    background-position: center center; /* Memusatkan gambar agar tidak terpotong */
-    background-attachment: fixed; /* Membuat background tetap saat scroll */
-    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    background-size: cover !important;
+    background-position: center top 30% !important; /* Coba ubah ke 30% atau lebih */
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
 }
 
 .menu {
@@ -14,6 +14,7 @@ body {
     justify-content: center;
     gap: 20px;
     margin-bottom: 20px;
+    padding-top: 50px; /* Menambahkan jarak ke bawah */
 }
 
 .dropdown {
@@ -46,6 +47,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     display: inline-block;
+    margin-top: 20px;
 }
 
 input {
@@ -76,4 +78,23 @@ button {
 
 .invalid {
     color: red; /* Jika input bukan angka */
+}
+
+.quote-container {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#quote {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
