@@ -101,10 +101,10 @@ button {
 
 @media screen and (max-width: 768px) {
     .quote-container {
-        font-size: 10px; /* Mengecilkan teks di HP */
+        font-size: 14px; /* Mengecilkan teks di HP */
         bottom: 5px; /* Mengurangi jarak bawah agar tidak terpotong */
-        padding: 3px; /* Kurangi padding biar tidak terlalu besar */
-        width: 80%; /* Batasi lebar agar tidak melebar */
+        padding: 5px; /* Kurangi padding biar tidak terlalu besar */
+        width: 50%; /* Batasi lebar agar tidak melebar */
     }
 }
 
